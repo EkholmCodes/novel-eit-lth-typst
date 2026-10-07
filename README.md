@@ -5,11 +5,11 @@
 
 An _unofficial_ Typst template made from the LaTeX version of the degree project at EIT, LTH.
 
-# thesis.typ
+## thesis.typ
 
-## Configuration
+### Configuration
 
-### Document Fields
+#### Document Fields
 
 | Parameter | Type | Required / Default | Description |
 | :--- | :--- | :--- | :--- |
@@ -50,9 +50,9 @@ Use the **state functions** like below:
 ```
 
 
-# Popular science summary
+## Popular science summary
 
-## Document fields
+### Document fields
 | Field | Type | Required / Default | Description |
 | :--- | :--- | :--- | :--- |
 | `summary-title` | `string` / `content` | **Required** | The title of the thesis summary. |
@@ -65,9 +65,9 @@ Use the **state functions** like below:
 | `presentation-date` | `datetime` | `datetime.today()` | The date of the presentation. Defaults to current date. |
 | `lang` | `string` | `"sv"` | Language setting for the document. Allowed values: `"sv"` or `"en"`. |
 
-# Goal docuemnt
+## Goal docuemnt
 
-## Document fields
+### Document fields
 
 | Parameter | Type | Required / Default | Description |
 | :--- | :--- | :--- | :--- |
@@ -80,9 +80,9 @@ Use the **state functions** like below:
 | `examiner` | `string` / `dictionary` | **Required** | Details or name of the assigned examiner. |
 | `lang` | `string` | `"en"` | Language setting for the document. Allowed values: `"en"` or `"sv"`. |
 
-# Project plan
+## Project plan
 
-## Document fields
+### Document fields
 
 | Parameter | Type | Required / Default | Description |
 | :--- | :--- | :--- | :--- |
