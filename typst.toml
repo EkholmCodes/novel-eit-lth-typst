@@ -1,14 +1,14 @@
 [package]
 name = "novel-eit-lth"
 version = "0.1.0"
-entrypoint = "src/eit-thesis.typ"
+entrypoint = "src/novel-eit-lth.typ"
 authors = ["Lucas Ekholm @EkholmCodes"]
 license = "MIT AND MIT-0"
 description = "Unofficial thesis template for Lund Faculty of Engineering at Lund University."
-repository = "https://github.com/EkholmCodes/eit_exjobb_template"
+repository = "https://github.com/EkholmCodes/novel-eit-lth-typst"
 categories = ["thesis", "layout"]
-keywords = ["LTH", "Lund Faculty of Engineering", "thesis", "bachelor", "master", "Lunds Tekniska Högskola", "Lunds Universitet"]
-exclude = [".gitignore", ".DStore"]
+keywords = ["LTH", "lund faculty of engineering", "electrical and information technology", "elektro- och informationsteknik", "eit", "thesis", "bachelor", "master", "lunds tekniska högskola", "lunds universitet"]
+exclude = [".gitignore"]
 compiler = "0.15.0"
 
 [template]
