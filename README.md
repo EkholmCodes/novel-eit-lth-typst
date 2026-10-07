@@ -25,7 +25,7 @@ An _unofficial_ Typst template made from the LaTeX version of the degree project
 | `affiliations` | `array` / `dictionary` / `content` | `none` | Optional author or university affiliations. |
 | `description` | `string` / `content` | `none` | Optional brief summary or metadata description. |
 | `keywords` | `array` | `()` | List of keywords for document metadata. |
-| `document-style` | `string` | `"original"` | Layout style for headers/headings. Allowed values: `"original"` or `"novel"`. |
+| `document-style` | `string` | `"novel"` | Layout style for headers/headings. Allowed values: `"original"` or `"novel"`. |
 | `front-cover-background` | `content` | `rect(width: 100%, height: 100%, fill: lu-light-brown)` | Visual element or color definition for the cover background. |
 | `date` | `datetime` | `datetime.today()` | Publication or submission date. |
 | `report-number` | `string` / `integer` | `none` | Report ID number. **Required if `print` is set to `true`**. |
