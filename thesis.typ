@@ -11,9 +11,9 @@
   keywords: keywords,
   description: "This is an example render made from the exjobb_eit.typ template made by Lucas Ekholm (E22).",
   date: end-date,
-  // issn: none,
-  report-number: [none],
-  print: true,
+  issn: none,
+  report-number: none,
+  print: false,
 )
 
 #show: frontmatter
