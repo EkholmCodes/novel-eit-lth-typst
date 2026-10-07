@@ -86,3 +86,9 @@ Use the **state functions** like below:
 | `academic-supervisor` | `string` / `dictionary` | **Required** | Details or name of the assigned academic supervisor. |
 | `examiner` | `string` / `dictionary` | **Required** | Details or name of the assigned examiner. |
 | `lang` | `string` | `"en"` | Language setting for the document. Allowed values: `"en"` or `"sv"`. |
+
+## Todo
+
+- Fix images to be content instead of string paths
+- Finish goal document example file
+- Publish to typst universe
