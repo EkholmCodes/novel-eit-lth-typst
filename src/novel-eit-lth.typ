@@ -1080,7 +1080,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     #set text(font: font-main, size: size-sub-sub-heading)
     #set align(horizon + center)
     #show title: set text(size: size-heading + 2pt)
-    #place(top + left, image("LU_RGB_ENG.png", width: 3cm))
+    #place(top + left, image("../assets/LU-RGB-ENG.png", width: 3cm))
     #block(height: 40%,
       grid(columns: 1, rows: auto, row-gutter: 1fr,
         title(),
