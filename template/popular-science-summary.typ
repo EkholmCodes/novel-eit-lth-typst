@@ -1,4 +1,4 @@
-#import "src/exjobb_eit.typ": popular-science-summary
+#import "@local/eit-thesis: 0.1.0": popular-science-summary
 #import "metadata.typ": *
 
 #import "@preview/droplet:0.3.1": dropcap

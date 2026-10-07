@@ -1,4 +1,4 @@
-#import "src/exjobb_eit.typ": goal-document, project-plan
+#import "@local/eit-thesis:0.1.0": goal-document, project-plan
 #import "metadata.typ": *
 #import "@preview/gantty:0.5.1": gantt
 

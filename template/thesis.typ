@@ -1,4 +1,4 @@
-#import "src/exjobb_eit.typ": thesis, mainmatter, frontmatter, backmatter, flexCaption
+#import "@local/eit-thesis:0.1.0": thesis, mainmatter, frontmatter, backmatter, flexCaption
 #import "metadata.typ": *
 
 #show: thesis.with(
