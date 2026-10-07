@@ -1,6 +1,6 @@
 //---------------------------------------------|  GLOBAL VARIABLES  |---------------------------------------------//
 
-#let template_version = version(1) // Change when changes are made to the template, used to distinguish from original
+#let template-version = version(1) // Change when changes are made to the template, used to distinguish from original
 
 #let debug = false
 
@@ -53,7 +53,7 @@
 //---------------------------------------------|  STYLINGS  |---------------------------------------------//
 
 // Custom captions, used when wanting two different texts from the main body and the outline
-#let flexCaption(long, short) = context if state("in-outline").get() { short } else { long }
+#let flex-caption(long, short) = context if state("in-outline").get() { short } else { long }
 
 // Headers
 

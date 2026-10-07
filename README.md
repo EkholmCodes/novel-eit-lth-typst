@@ -1,8 +1,5 @@
 # EIT Degree Project Template in Typst 
 
-![Built with Typst](https://img.shields.io/badge/Built%20with-Typst-333?logo=typst)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
 An _unofficial_ Typst template made from the LaTeX version of the degree project at EIT, LTH.
 
 ## thesis.typ
