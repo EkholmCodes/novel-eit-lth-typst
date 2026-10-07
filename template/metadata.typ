@@ -1,7 +1,7 @@
 /* Metadata for the degree project */
 
 #let title = [On the Importance of Modern Typesetting]
-#let subtitle = [An unofficial Typst template for degree project at LTH]
+#let subtitle = [Design, fabrication and measurements of a novel thesis.]
 
 #let authors = (
     (

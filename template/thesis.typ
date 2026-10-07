@@ -9,7 +9,7 @@
   examiner: examiner,
   affiliations: affiliation,
   keywords: keywords,
-  description: "This is an example render made from the exjobb_eit.typ template made by Lucas Ekholm (E22).",
+  description: "Unofficial thesis template for degree projects at Electrical and information technology at Lund University.",
   date: end-date,
   issn: none,
   report-number: none,

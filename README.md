@@ -1,6 +1,6 @@
-# EIT Degree Project Template in Typst 
+# Novel EIT
 
-An _unofficial_ Typst template made from the LaTeX version of the degree project at EIT, LTH.
+An unofficial thesis template made from the LaTeX version of the degree project at Electrical and information technology at Lund University.
 
 ## thesis.typ
 
@@ -62,7 +62,7 @@ Use the **state functions** like below:
 | `presentation-date` | `datetime` | `datetime.today()` | The date of the presentation. Defaults to current date. |
 | `lang` | `string` | `"sv"` | Language setting for the document. Allowed values: `"sv"` or `"en"`. |
 
-## Goal docuemnt
+## Goal document
 
 ### Document fields
 
