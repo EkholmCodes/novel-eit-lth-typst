@@ -438,7 +438,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     #set text(fill: lu-bronze, font: font-secondary, size: size-secondary, weight: "semibold")
     #if debug {place(center + horizon, grid(rows: 7*(1fr,), columns: 5*(1fr,), stroke: 1pt))} // Used for debugging
     #place(top + right, dx: -5mm, dy: 0.5/7*100%, rotate(90deg, reflow: true, text(size: 6pt, [Printed by Tryckeriet i E-huset, Lund #date.display("[year]")])))
-    #place(center + bottom, dy: -1/7*100% , image("../assets/LU_RGB_ENG.png", height: 1/7*100%))
+    #place(center + bottom, dy: -1/7*100% , image("../assets/LU-RGB-ENG.png", height: 1/7*100%))
     #place(center + bottom, dy: -1/7*100% + 2cm , [
       Series of #degree's theses \
       #department \
@@ -770,7 +770,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     examiner,
     degree-level-en,
     department-en,
-    ("../assets/LundUniversity_C_BLACK.png",) + if affiliations != none {
+    ("../assets/LU-BLACK-ENG.png",) + if affiliations != none {
       affiliations.map(affiliation => affiliation.logo)
     },
     date
