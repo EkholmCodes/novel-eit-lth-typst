@@ -1,5 +1,5 @@
 [package]
-name = "eit-thesis"
+name = "novel-eit-lth"
 version = "0.1.0"
 entrypoint = "src/eit-thesis.typ"
 authors = ["Lucas Ekholm @EkholmCodes"]
