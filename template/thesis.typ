@@ -77,10 +77,10 @@ The equations above are @divergence and @ampere-maxwell. This is @intro but belo
 
 #figure(
 	block(width: 5cm, height: 3cm, fill: luma(80%), align(center + horizon, text(size: 75pt, fill: luma(10%), letter()))),
-	caption: flexCaption([A figure with a longer caption. #lorem(50)], [A shorter caption, but links to the same figure!])
+	caption: flex-caption([A figure with a longer caption. #lorem(50)], [A shorter caption, but links to the same figure!])
 )
 
-= #flexCaption("New Chapter with a Long Title that Spanns over More Than One Line", "A New Chapter with a Short Title") <flexHeading>
+= #flex-caption("New Chapter with a Long Title that Spanns over More Than One Line", "A New Chapter with a Short Title") <flexHeading>
 
 #grid(columns: 2, 
 	[#figure(
@@ -89,10 +89,10 @@ The equations above are @divergence and @ampere-maxwell. This is @intro but belo
 	) <figureB> ], [
 	#figure(
 	block(width: 5cm, height: 2.5cm, fill: luma(80%), align(center + horizon, text(size: 75pt, fill: luma(10%), letter()))),
-	caption: flexCaption([This figure can have a long caption and still fit if done this way. #lorem(10)], [This figure can have a long caption and still fit.])
+	caption: flex-caption([This figure can have a long caption and still fit if done this way. #lorem(10)], [This figure can have a long caption and still fit.])
 ) <figureC>])
 
-Above @figureB is next to @figureC. By using the #raw("#flexCaption(long caption, short caption)", lang: "typst", block: false) function you can make flexible captions. You can also make longer/shorter headings! See @flexHeading on #ref(<outline>, form: "page").
+Above @figureB is next to @figureC. By using the #raw("#flex-caption(long caption, short caption)", lang: "typst", block: false) function you can make flexible captions. You can also make longer/shorter headings! See @flexHeading on #ref(<outline>, form: "page").
 
 == New section
 

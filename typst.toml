@@ -8,7 +8,7 @@ description = "Unofficial thesis template for Lund Faculty of Engineering at Lun
 repository = "https://github.com/EkholmCodes/novel-eit-lth-typst"
 categories = ["thesis", "layout"]
 keywords = ["LTH", "lund faculty of engineering", "electrical and information technology", "elektro- och informationsteknik", "eit", "thesis", "bachelor", "master", "lunds tekniska högskola", "lunds universitet"]
-exclude = [".git", ".gitignore", ".DStore", "github"]
+exclude = [".git", ".gitignore", ".DS_Store", ".github"]
 compiler = "0.15.0"
 
 [template]
