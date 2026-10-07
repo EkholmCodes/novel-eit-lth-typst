@@ -1,0 +1,16 @@
+[package]
+name = "lth-thesis"
+version = "0.1.0"
+entrypoint = "src.typ"
+authors = ["Lucas Ekholm @EkholmCodes"]
+license = "MIT AND MIT-0"
+description = "Unofficial thesis template for Lund Faculty of Engineering at Lund University."
+repository = "https://github.com/EkholmCodes/eit_exjobb_template"
+categories = ["thesis", "layout"]
+keywords = ["LTH", "Lund Faculty of Engineering", "thesis", "bachelor", "master", "Lunds Tekniska Högskola", "Lunds Universitet"]
+exclude = [".gitignore", ".DStore"]
+
+[template]
+path = "template"
+entrypoint = "thesis.typ"
+thumbnail = "thumbnail.png"

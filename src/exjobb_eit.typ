@@ -273,7 +273,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
   foreground: place(
     bottom + right,
     dy: 17mm, dx: 13mm,
-    image("LU-sigill.webp", width: 50%))
+    image("../assets/LU-sigill.webp", width: 50%))
   )[
     #set par(justify: true, leading: 0.7em)
     #set text(font: font-secondary, size: size-secondary, fill: lu-bronze, weight: "bold", hyphenate: false)
@@ -339,12 +339,11 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     block(height: 100%, 
       grid(
         row-gutter: (1.25fr, 1.25fr, 1fr, 1fr),
-        stroke: 0pt,
         smallcaps[#degree's thesis #date.year() #linebreak() #department],
         grid(row-gutter: 3em,
-          line(),
+          // line(),
           title(),
-          line(),
+          // line(),
           ..if subtitle != none {(text(subtitle, size: size-sub-heading),)},
         ),
         print-authors,
@@ -355,7 +354,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
           if images-filtered.len() != 0 {
             grid(column-gutter: 0.2fr,
               columns: (1fr,) * images-filtered.len(),
-              ..images-filtered.map(img => image(img, fit: "contain", height: 3cm)))
+              ..images-filtered.map(img => image(img, fit: "contain", width: 5cm)))
           }
         },
       )
@@ -439,7 +438,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     #set text(fill: lu-bronze, font: font-secondary, size: size-secondary, weight: "semibold")
     #if debug {place(center + horizon, grid(rows: 7*(1fr,), columns: 5*(1fr,), stroke: 1pt))} // Used for debugging
     #place(top + right, dx: -5mm, dy: 0.5/7*100%, rotate(90deg, reflow: true, text(size: 6pt, [Printed by Tryckeriet i E-huset, Lund #date.display("[year]")])))
-    #place(center + bottom, dy: -1/7*100% , image("LU_RGB_ENG.png", height: 1/7*100%))
+    #place(center + bottom, dy: -1/7*100% , image("../assets/LU_RGB_ENG.png", height: 1/7*100%))
     #place(center + bottom, dy: -1/7*100% + 2cm , [
       Series of #degree's theses \
       #department \
@@ -771,7 +770,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     examiner,
     degree-level-en,
     department-en,
-    ("LundUniversity_C_BLACK.png",) + if affiliations != none {
+    ("../assets/LundUniversity_C_BLACK.png",) + if affiliations != none {
       affiliations.map(affiliation => affiliation.logo)
     },
     date

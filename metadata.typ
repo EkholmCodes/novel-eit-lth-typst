@@ -1,6 +1,6 @@
 /* Metadata for the degree project */
 
-#let title = [Test of exjobb_eit.typ]
+#let title = [On the Importance of Modern Typesetting]
 #let subtitle = [An unofficial Typst template for degree project at LTH]
 
 #let authors = (
