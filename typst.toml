@@ -1,5 +1,5 @@
 [package]
-name = "novel-eit-lth"
+name = "revised-eit-lth"
 version = "0.1.0"
 entrypoint = "src/novel-eit-lth.typ"
 authors = ["Lucas Ekholm @EkholmCodes"]
