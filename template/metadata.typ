@@ -1,7 +1,7 @@
 /* Metadata for the degree project */
 
 #let title = [On the Importance of Modern Typesetting]
-#let subtitle = [Design, fabrication and measurements of a novel thesis.]
+#let subtitle = [Design, fabrication and measurements of a revised thesis.]
 
 #let authors = (
     (

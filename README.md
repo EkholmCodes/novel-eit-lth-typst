@@ -30,7 +30,62 @@ typst compile thesis.typ
 
 ### Metadata
 
-To consistently use the same parameters across all documents, the parameters are imported through ```metadata.typ``` such that the writer only needs to bother once to put in these values.
+To consistently use the same parameters across all documents, the parameters are imported through ```metadata.typ```. This is done such that the writer only needs to bother once when configuring. 
+
+```typst
+/* Metadata for the degree project */
+
+#let title = [On the Importance of Modern Typesetting]
+#let subtitle = [Design, fabrication and measurements of a revised thesis.]
+
+#let authors = (
+    (
+      name: "John Doe",
+      email: "john.doe@examplemail.com",
+      civic-number: "010101-0101",
+    ),
+    (
+      name: "Jane Doe",
+      affiliation: "Lund University",
+      email: "jane.doe@examplemail.com",
+      civic-number: "020202-0202",  
+    ),
+  )
+ 
+#let supervisors = (
+  academic: (
+    name: "Academic Supervisor",
+    email: "academic.supervisor@eit.lth.se",
+    affiliation: "LTH"
+  ),
+  company: (
+    name: "Company Superisor",
+    email: "company.supervisor@company.com",
+    affiliation: "Company name"
+  ),
+  company2: (
+    name: "A second supervisor",
+    email: "company.supervisor2@company.com",
+    affiliation: "Company"
+  )
+)
+
+#let examiner = (
+  name: "Examiner",
+  email: "academic.examiner@eit.lth.se"
+)
+
+#let affiliation = (
+  (
+    name: "Some company",
+    logo: none
+  ),
+)
+
+#let keywords = ("Keyword 1", "Keyword 2")
+#let start-date = datetime(year: 2004, month: 3, day: 21)
+#let end-date = datetime(year: 2022, month: 10, day: 22)
+```
 
 ## thesis
 
@@ -60,22 +115,11 @@ To consistently use the same parameters across all documents, the parameters are
 | `print` | `bool` | `false` | Enables print mode formatting (requires `report-number`). |
 
 
+### The ```print``` field
+
+When this parameter is set to true, the thesis will be put to a G5 format with front and end covers. The front cover is goverend by ```front-cover-background```. To print, the thesis must have a report number, which is given by the institution. By default print is set to false, which renders the report on an a4 paper with some metadata on the top along with bounding boxes illustrating the G5 paper.
+
 ### Example
-
-Use the **state functions** like below:
-```typst
-#show: frontmatter
-
-// Here goes your frontmatter
-
-#show: mainmatter
-
-// Here goes your mainmatter
-
-#show: backmatter
-
-// Here goes your appendicies
-```
 
 ```typst
 #import "@local/novel-eit-lth:0.1.0": thesis, mainmatter, frontmatter, backmatter, flex-caption
@@ -95,6 +139,19 @@ Use the **state functions** like below:
   report-number: none,
   print: false,
 )
+
+#show: frontmatter
+
+// Here goes your frontmatter
+
+#show: mainmatter
+
+// Here goes your mainmatter
+
+#show: backmatter
+
+// Here goes your appendicies
+
 ```
 
 
@@ -137,3 +194,8 @@ Use the **state functions** like below:
 | `academic-supervisor` | `string` / `dictionary` | **Required** | Details or name of the assigned academic supervisor. |
 | `examiner` | `string` / `dictionary` | **Required** | Details or name of the assigned examiner. |
 | `lang` | `string` | `"en"` | Language setting for the document. Allowed values: `"en"` or `"sv"`. |
+
+## Todo
+
+- Fix image in affiliation to be of type content instead of string to the image path
+- Seperate styling to a different file called style.typ?
