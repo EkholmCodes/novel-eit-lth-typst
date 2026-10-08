@@ -492,7 +492,7 @@
   affiliations: none,
   description: none,
   keywords: (),
-  document-style: "novel",
+  document-style: "revised",
   front-cover-background: rect(width: 100%, height: 100%, fill: lu-light-brown),
   date: datetime.today(),
   report-number: none,
@@ -533,15 +533,15 @@
   // Assertions for logic and specific values
   assert(not (report-number == none and print), message: "Thesis must have a report-id to be printed!")
   
-  assert(document-style in ("original", "novel"), 
-    message: "Variable 'doucument-style' must be either 'original' (default) or 'novel'."
+  assert(document-style in ("original", "revised"), 
+    message: "Variable 'doucument-style' must be either 'original' (default) or 'revised'."
   )
 
   if document-style == "original"{
     state("header").update(_header-original())
     state("heading").update(_ => _heading-original)
   }
-  else if document-style == "novel"{
+  else if document-style == "revised"{
     state("header").update(_header-alternating())
     state("heading").update(_ => _heading-new)
   }
