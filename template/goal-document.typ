@@ -1,4 +1,4 @@
-#import "@local/novel-eit-lth:0.1.0": goal-document, project-plan
+#import "@local/revised-eit-lth:0.1.0": goal-document, project-plan
 #import "metadata.typ": *
 #import "@preview/gantty:0.5.1": gantt
 

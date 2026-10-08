@@ -1,8 +1,38 @@
-# Novel EIT
+# Revised EIT
 
-An unofficial thesis template made from the LaTeX version of the degree project at Electrical and information technology at Lund University.
+**re·vised** - /*rɪˈvaɪzd*/  
+adjective
 
-## thesis.typ
+To look over again or make changes to in order to correct or improve.
+
+---
+
+An unofficial thesis template made from the LaTeX version of the degree project at Electrical and information technology (EIT) at Lund University. Although from being inspired by other templates and projects (for example the original template and the template from CS), this template is an attempt to pull something new for students looking to write their thesis in Typst at EIT.
+
+It contains one template file which has four functions to call upon for the different documents in the degree project:
+
+- **thesis** - The project report to be written
+- **popular-science-summary** - For promoting your work in a Lund University graphic based fashion.
+- **goal-document** - For early planning and goal-setting for the project. 
+- **project-plan** - Complements and is used inside the the goal document.
+
+## Usage
+
+### To start
+
+Open in the web app, or the CLI using
+
+```bash
+typst init @preview/revised-eit-lth project
+cd project
+typst compile thesis.typ
+```
+
+### Metadata
+
+To consistently use the same parameters across all documents, the parameters are imported through ```metadata.typ``` such that the writer only needs to bother once to put in these values.
+
+## thesis
 
 ### Configuration
 
@@ -29,7 +59,8 @@ An unofficial thesis template made from the LaTeX version of the degree project 
 | `issn` | `string` | `none` | ISSN identifier for published prints. |
 | `print` | `bool` | `false` | Enables print mode formatting (requires `report-number`). |
 
----
+
+### Example
 
 Use the **state functions** like below:
 ```typst
@@ -46,8 +77,28 @@ Use the **state functions** like below:
 // Here goes your appendicies
 ```
 
+```typst
+#import "@local/novel-eit-lth:0.1.0": thesis, mainmatter, frontmatter, backmatter, flex-caption
+#import "metadata.typ": *
 
-## Popular science summary
+#show: thesis.with(
+  thesis-title: title,
+  thesis-subtitle: subtitle,
+  authors: authors,
+  supervisors: supervisors,
+  examiner: examiner,
+  affiliations: affiliation,
+  keywords: keywords,
+  description: "Unofficial thesis template for degree projects at Electrical and information technology at Lund University.",
+  date: end-date,
+  issn: none,
+  report-number: none,
+  print: false,
+)
+```
+
+
+## popular-science-summary
 
 ### Document fields
 | Field | Type | Required / Default | Description |
@@ -62,7 +113,7 @@ Use the **state functions** like below:
 | `presentation-date` | `datetime` | `datetime.today()` | The date of the presentation. Defaults to current date. |
 | `lang` | `string` | `"sv"` | Language setting for the document. Allowed values: `"sv"` or `"en"`. |
 
-## Goal document
+## goal-document
 
 ### Document fields
 
@@ -77,7 +128,7 @@ Use the **state functions** like below:
 | `examiner` | `string` / `dictionary` | **Required** | Details or name of the assigned examiner. |
 | `lang` | `string` | `"en"` | Language setting for the document. Allowed values: `"en"` or `"sv"`. |
 
-## Project plan
+## project-plan
 
 ### Document fields
 
@@ -86,9 +137,3 @@ Use the **state functions** like below:
 | `academic-supervisor` | `string` / `dictionary` | **Required** | Details or name of the assigned academic supervisor. |
 | `examiner` | `string` / `dictionary` | **Required** | Details or name of the assigned examiner. |
 | `lang` | `string` | `"en"` | Language setting for the document. Allowed values: `"en"` or `"sv"`. |
-
-## Todo
-
-- Fix images to be content instead of string paths
-- Finish goal document example file
-- Publish to typst universe
