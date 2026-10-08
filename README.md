@@ -107,7 +107,7 @@ To consistently use the same parameters across all documents, the parameters are
 | `affiliations` | `array` / `dictionary` / `content` | `none` | Optional author or university affiliations. |
 | `description` | `string` / `content` | `none` | Optional brief summary or metadata description. |
 | `keywords` | `array` | `()` | List of keywords for document metadata. |
-| `document-style` | `string` | `"novel"` | Layout style for headers/headings. Allowed values: `"original"` or `"novel"`. |
+| `document-style` | `string` | `"revised"` | Layout style for headers/headings. Allowed values: `"original"` or `"revised"`. |
 | `front-cover-background` | `content` | `rect(width: 100%, height: 100%, fill: lu-light-brown)` | Visual element or color definition for the cover background. |
 | `date` | `datetime` | `datetime.today()` | Publication or submission date. |
 | `report-number` | `string` / `integer` | `none` | Report ID number. **Required if `print` is set to `true`**. |
@@ -197,5 +197,6 @@ When this parameter is set to true, the thesis will be put to a G5 format with f
 
 ## Todo
 
-- Fix image in affiliation to be of type content instead of string to the image path
+- Fix image in affiliation to be of type content instead of string to the image path.
 - Seperate styling to a different file called style.typ?
+- Finish project plan template.
